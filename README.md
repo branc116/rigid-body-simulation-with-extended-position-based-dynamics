@@ -2,7 +2,7 @@
 
 Originial paper was made by Matthias Müller Miles Macklin Nuttapong Chentanez Stefan Jeschke Tae-Yong Kim for NVIDIA and University of Copenhagen.
 
-[https://matthias-research.github.io/pages/publications/PBDBodies.pdf](orginal paper)
+[orginal paper](https://matthias-research.github.io/pages/publications/PBDBodies.pdf)
 
 Maybe it works, maybe not. It's doing something for sure, but the question is: "What?" I did my best to implement it.
 
