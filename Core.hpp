@@ -1,5 +1,5 @@
 #include "Types.hpp"
-#include "bits/stdc++.h"
+// #include "bits/stdc++.h"
 #include <iostream>
 
 v_t<4> qInverse(const v_t<4> &q) {
@@ -93,10 +93,12 @@ void VelSolve(Config &c) {}
 void loop(Config &c) {
   while (!*c.stop) {
     CollectCollisionPairs(c);
-    PrePosSolve(c);
-    PosSolve(c);
-    PreVelSolve(c);
-    VelSolve(c);
+    for(int i = 0; i< c.numSubSteps; i++) {
+      PrePosSolve(c);
+      PosSolve(c);
+      PreVelSolve(c);
+      VelSolve(c);
+    }
     for(auto&& cb : c.callBacks) {
         cb(c);
     }

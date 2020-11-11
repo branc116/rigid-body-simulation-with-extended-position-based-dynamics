@@ -1,5 +1,8 @@
 #pragma once
-#include "bits/stdc++.h"
+#include <utility>
+#include <vector>
+
+// #include "bits/stdc++.h"
 #include "blaze/Blaze.h"
 template <size_t n> using v_t = blaze::StaticVector<double, n>;
 
